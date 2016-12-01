@@ -1,12 +1,12 @@
 {
-  "name": "watchface",
-  "author": "MakeAwesomeHappen",
+  "name": "My Watchface",
+  "author": "tocky",
   "version": "1.0.0",
   "keywords": ["pebble-app"],
   "private": true,
   "dependencies": {},
   "pebble": {
-    "displayName": "watchface",
+    "displayName": "My Watchface",
     "uuid": "4a80f84f-c16d-489f-b1bb-efcf654941c6",
     "sdkVersion": "3",
     "enableMultiJS": true,
@@ -20,13 +20,23 @@
       "watchface": true
     },
     "messageKeys": [
-      "dummy"
+      "TEMPERATURE",
+      "CONDITIONS"
+    ],
+    "capabilities": [
+      "location"
     ],
     "resources": {
       "media": [
         {
           "type": "font",
           "name": "FONT_PERFECT_DOS_48",
+          "file": "fonts/perfect-dos-vga.ttf",
+          "compatibility": "2.7"
+        },
+        {
+          "type": "font",
+          "name": "FONT_PERFECT_DOS_20",
           "file": "fonts/perfect-dos-vga.ttf",
           "compatibility": "2.7"
         },
